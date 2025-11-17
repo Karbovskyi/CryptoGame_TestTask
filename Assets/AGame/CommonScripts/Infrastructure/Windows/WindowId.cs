@@ -3,7 +3,7 @@
   public enum WindowId
   {
     FeatureInDevelopment = 0,
-    MiningSuccess = 1,
-    MiningFailed = 2,
+    Success = 1,
+    Failed = 2,
   }
 }

@@ -36,5 +36,5 @@ public class IslandsScreenMediator : IDisposable
 
     private void OnBackButtonClick() => _stateMachine.Enter<LoadingHomeScreenState>();
     private void OnIslandKYCClick() => _windowService.Open(WindowId.FeatureInDevelopment);
-    private void OnIslandMinigameClick() => _stateMachine.Enter<LoadingMinigameState, string>("Minigame1");
+    private void OnIslandMinigameClick() => _stateMachine.Enter<LoadingMinigameState, string>("Minigame");
 }

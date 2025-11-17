@@ -2,6 +2,7 @@
 using AGame.Infrastructure.States.StateInfrastructure;
 using AGame.Infrastructure.States.StateMachine;
 using Code.Gameplay.StaticData;
+using UnityEngine;
 
 namespace AGame.Infrastructure.States.GameStates
 {
@@ -18,6 +19,7 @@ namespace AGame.Infrastructure.States.GameStates
     
     public override void Enter()
     {
+      Application.targetFrameRate = 90;
       _staticDataService.LoadAll();
       _stateMachine.Enter<LoadingHomeScreenState>();
     }

@@ -13,7 +13,7 @@ namespace Code.Gameplay.Windows
         [Inject]
         private void Construct(IWindowService windowService)
         {
-            Id = WindowId.MiningSuccess;
+            Id = WindowId.FeatureInDevelopment;
             _windowService = windowService;
         }
         
