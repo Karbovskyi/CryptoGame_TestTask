@@ -15,6 +15,9 @@ namespace AGame.Infrastructure.States.GameStates.Level
 
     public override void Enter()
     {
+      
+      
+      
       _stateMachine.Enter<MinigameLoopState>();
     }
   }
